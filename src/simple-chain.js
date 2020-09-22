@@ -1,4 +1,3 @@
-const CustomError = require("../extensions/custom-error");
 
 const chainMaker = {
   value: [],
@@ -16,7 +15,7 @@ const chainMaker = {
       return this;
     } else {
       this.value = []
-      throw new CustomError();
+      throw new Error();
     }
   },
   reverseChain() {
